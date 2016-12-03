@@ -1,5 +1,6 @@
 AdminlteBundle
 ==============
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/fb09259c-1e0e-4c6a-b069-ce6ac05c5518/big.png)](https://insight.sensiolabs.com/projects/fb09259c-1e0e-4c6a-b069-ce6ac05c5518)
 
 AdminlteBundle is a component that allows easy integration to Symfony projects.
 
