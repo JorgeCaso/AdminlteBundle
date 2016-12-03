@@ -42,7 +42,7 @@ class AppKernel extends Kernel
 Example
 -------
 
-Modify the `app/config/config.yml` file and replace
+Modify the `app/Resources/views/base.html.twig` file and replace
 
 ```twig
 {% extends "JorgecasoAdminlteBundle:Layout:dashboard.html.twig" %}
