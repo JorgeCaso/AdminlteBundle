@@ -1,0 +1,50 @@
+{% extends "JorgecasoAdminlteBundle:Layout:dashboard.html.twig" %}
+{% block logo %}
+    {{ include('JorgecasoAdminlteBundle:Component/header:logo.html.twig') }}
+{% endblock %}
+
+{% block messages_menu %}
+    {{ include('JorgecasoAdminlteBundle:Component/header:messages-menu.html.twig') }}
+{% endblock %}
+
+{% block notifications_menu %}
+    {{ include('JorgecasoAdminlteBundle:Component/header:notifications-menu.html.twig') }}
+{% endblock %}
+
+{% block tasks_menu %}
+    {{ include('JorgecasoAdminlteBundle:Component/header:tasks-menu.html.twig') }}
+{% endblock %}
+                        
+{% block user_menu %}
+    {{ include('JorgecasoAdminlteBundle:Component/header:user-menu.html.twig') }}
+{% endblock %}
+
+{% block main_sidebar %}
+    {{ include('JorgecasoAdminlteBundle:Component/aside:main-sidebar.html.twig') }}
+{% endblock %}
+
+{% block body %}{% endblock %}
+
+{% block main_footer %}
+    {{ include('JorgecasoAdminlteBundle:Component/footer:main-footer.html.twig') }}
+{% endblock %}
+
+{% block control_sidebar %}
+    {{ include('JorgecasoAdminlteBundle:Component/aside:control-sidebar.html.twig') }}
+{% endblock %}
+
+{#
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
+#}

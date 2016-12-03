@@ -1,0 +1,65 @@
+{% extends "JorgecasoAdminlteBundle:Layout:base.html.twig" %}
+{% block body_adminlte %}
+    <div class="wrapper">
+        <header class="main-header">
+            {% block logo %}
+                {{ include('JorgecasoAdminlteBundle:Component/header:logo.html.twig') }}
+            {% endblock %}
+            {#  Header Navbar: style can be found in header.less #}
+            <nav class="navbar navbar-static-top">
+                {#  Sidebar toggle button#}
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        {% block messages_menu %}
+                            {#  Messages: style can be found in dropdown.less#}
+                            {{ include('JorgecasoAdminlteBundle:Component/header:messages-menu.html.twig') }}
+                        {% endblock %}
+                        
+                        {% block notifications_menu %}
+                            {#  Notifications: style can be found in dropdown.less #}
+                            {{ include('JorgecasoAdminlteBundle:Component/header:notifications-menu.html.twig') }}
+                        {% endblock %}
+                        
+                        {% block tasks_menu %}
+                            {#  Tasks: style can be found in dropdown.less #}
+                            {{ include('JorgecasoAdminlteBundle:Component/header:tasks-menu.html.twig') }}
+                        {% endblock %}
+                        
+                        {% block user_menu %}
+                            {#  User Account: style can be found in dropdown.less #}
+                            {{ include('JorgecasoAdminlteBundle:Component/header:user-menu.html.twig') }}
+                        {% endblock %}
+                        
+                        {#  Control Sidebar Toggle Button #}
+                        <li>
+                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        {% block main_sidebar %}
+            {{ include('JorgecasoAdminlteBundle:Component/aside:main-sidebar.html.twig') }}
+        {% endblock %}
+        
+        {#  Content Wrapper. Contains page content #}
+        <div class="content-wrapper">
+            {% block body %}{% endblock %}
+        </div>
+        {#  /.content-wrapper #}
+        
+        {% block main_footer %}
+            {{ include('JorgecasoAdminlteBundle:Component/footer:main-footer.html.twig') }}
+        {% endblock %}
+        
+        {% block control_sidebar %}
+            {{ include('JorgecasoAdminlteBundle:Component/aside:control-sidebar.html.twig') }}
+        {% endblock %}
+        {#  Add the sidebar's background. This div must be placed immediately after the control sidebar #}
+        <div class="control-sidebar-bg"></div>
+    </div>
+{% endblock body_adminlte%}
+
