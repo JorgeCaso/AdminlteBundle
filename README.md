@@ -42,7 +42,7 @@ class AppKernel extends Kernel
 Example
 -------
 
-Modify the `app/Resources/views/base.html.twig` file and replace
+Modify the `app/Resources/views/base.html.twig` file and replace the content with:
 
 ```twig
 {% extends "JorgecasoAdminlteBundle:Layout:dashboard.html.twig" %}
@@ -52,6 +52,7 @@ Modify the `app/Resources/views/base.html.twig` file and replace
 {% endblock %}
 ```
 Insert the desired content into body tag. **It's all**.
+**(Tip: Review the AdminLTE documentation :) .)**
 
 License
 -------
