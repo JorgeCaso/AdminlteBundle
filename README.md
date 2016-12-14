@@ -6,7 +6,7 @@ AdminlteBundle is a component that allows easy integration to Symfony projects.
 
 **Requirements**
   * AdminLTE 2 - almsaeedstudio.
-  * Symfony 2.3+ or 3.x applications.
+  * Symfony 2.x or 3.x applications.
   
 Installation
 ------------
